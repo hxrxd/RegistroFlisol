@@ -28,7 +28,7 @@ public class Registro extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/flisol.png"));
         setIconImage(icon);
-       
+        DataLogic dt = new DataLogic();
         this.formWindowOpened(null);
         
     }
@@ -327,7 +327,7 @@ public class Registro extends javax.swing.JFrame {
                     p.setII(ii);
                     
                     dt.addNewPartaker(p);
-
+                    this.clean();
                     }
             
         }
@@ -340,6 +340,8 @@ public class Registro extends javax.swing.JFrame {
         cCheckBox.setSelected(false);
         iCheckBox.setSelected(false);
         sCheckBox.setSelected(false);
+        jTextField1.setText("");
+        jTextField2.setText("");
     }
     /**
      * @param args the command line arguments

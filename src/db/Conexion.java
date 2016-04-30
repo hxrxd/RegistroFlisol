@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 public class Conexion {
      public static Connection getConexion() {
         String driver = "com.mysql.jdbc.Driver";
-        String ip = "localhost";
+        String ip = "192.168.0.101";
         String bd = "flisol";
         String usr = "flisol";
         String  pass = "flisol";
